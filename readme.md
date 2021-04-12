@@ -1,9 +1,9 @@
-# Submission or project name
+# Cleanurge
 
-[![Contributors](https://img.shields.io/github/contributors/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/project-template.svg)](https://github.com/dsckgec/project-template/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/project-template)](https://github.com/dsckgec/project-template/pulls)
+[![Contributors](https://img.shields.io/github/contributors/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/cleanurge-backend)](https://github.com/dsckgec/cleanurge-backend/pulls)
 
 
-A basic GitHub repository template for initializing open source projects on a single click.
+A scalable waste management system powered by IoT.
 
 ## Contents
 
@@ -61,8 +61,8 @@ A step by step series of examples that tell you how to get a development env run
 
 ## Built with
 
-- []()
-- []()
+- [Express](https://expressjs.com/) - A NodeJS Framework
+- [MongoDB](https://www.mongodb.com/) - as the database
 
 ## Contributing
 
@@ -70,14 +70,14 @@ Please read [contributing.md](contributing.md) for details on our code of conduc
 
 ## Authors
 
-<a href="https://github.com/DSCKGEC/project-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DSCKGEC/project-template" />
+<a href="https://github.com/DSCKGEC/cleanurge-backend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DSCKGEC/cleanurge-backend" />
 </a>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU Public License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- 
+[contributors-img](https://contrib.rocks)
