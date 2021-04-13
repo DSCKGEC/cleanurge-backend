@@ -2,7 +2,6 @@
 
 [![Contributors](https://img.shields.io/github/contributors/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/graphs/contributors) [![Forks](https://img.shields.io/github/forks/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/network/members) [![Issues](https://img.shields.io/github/issues/dsckgec/cleanurge-backend.svg)](https://github.com/dsckgec/cleanurge-backend/issues) [![Pull Request](https://img.shields.io/github/issues-pr-closed-raw/dsckgec/cleanurge-backend)](https://github.com/dsckgec/cleanurge-backend/pulls)
 
-
 A scalable waste management system powered by IoT.
 
 ## Contents
@@ -21,13 +20,16 @@ A scalable waste management system powered by IoT.
 ## Description
 
 ### What's the problem?
+
 Today, waste is a significant global issue. Increasing volumes of waste are being generated as the global population and living standards rise.
 The environmental impact is significant, with massive volumes of waste generated annually with only basic or little treatment to minimise its impact. People are increasingly concerned about the production of waste and its effect, and are seeking ways to deal with the problem.
 
 ### How can this project help?
+
 Our project serves to prevent overaccumulation of waste at public bins by maintaining a log of their waste accumulation levels. The authorities will have the feature to get live status of the various public bins and appoint garbagemen to clear off any bins on overaccumulation.
 
 ### The idea
+
 The idea is to have wireless beacons configured at various public bins to detect and measure the level of waste accumulation at the bins. When the level at any of the bins cross a certain level, a request is triggered to a web server that is then used to send notifications to the authorities in an app as well as web based software. The mobile application also supports the feature for individuals living in a locality to report of any waste accumulation directly to the authorities.
 
 ## Project structure
@@ -42,7 +44,7 @@ The idea is to have wireless beacons configured at various public bins to detect
   ├── models/             database schema / models go here
   ├── routes/             routes or endpoint definitions go here, routes make calls to controllers
   ├── services/           files that process and query the database go here
-  ├── utils/              utility or helper functions go here        
+  ├── utils/              utility or helper functions go here
   ├── .env                environment variables used in the project
   ├── .gitignore          stores files and directories to be ignored in commits
   ├── .prettierrc         configuration for prettier to help maintain a common code formatting
@@ -61,15 +63,15 @@ The idea is to have wireless beacons configured at various public bins to detect
 
 The project currently does the following things.
 
-- Feature 1
-- Feature 2
-- Feature 3
+-   Feature 1
+-   Feature 2
+-   Feature 3
 
 See below for our future steps.
 
-- Feature 1
-- Feature 2
-- Feature 3
+-   Feature 1
+-   Feature 2
+-   Feature 3
 
 ## Getting started
 
@@ -122,8 +124,8 @@ A step by step series of instructions that tell you how to get the project runni
 
 ## Built with
 
-- [Express](https://expressjs.com/) - A NodeJS Framework
-- [MongoDB](https://www.mongodb.com/) - as the database
+-   [Express](https://expressjs.com/) - A NodeJS Framework
+-   [MongoDB](https://www.mongodb.com/) - as the database
 
 ## Contributing
 
