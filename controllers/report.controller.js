@@ -5,7 +5,7 @@ const reportService = require('../services/report.service');
 const Create = async (req, res) => {
     try {
         const result = await reportService.Create(req.body);
-        res.status(200).json(result);
+        res.status(201).json(result);
     } catch (err) {
         res.status(400).json(err);
     }

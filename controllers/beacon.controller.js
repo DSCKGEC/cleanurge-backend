@@ -7,7 +7,7 @@ const Add = async (req, res) => {
     req.body.code = generateCode(6);
     try {
         const result = await beaconService.Add(req.body);
-        res.status(200).json(result);
+        res.status(201).json(result);
     } catch (err) {
         res.status(400).json(err);
     }
