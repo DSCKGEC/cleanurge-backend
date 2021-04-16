@@ -24,7 +24,7 @@ Router.get('/', userAuth(), beaconController.FetchAllBeacons);
 
 /**
  * @swagger
- * /api/beacon/:beacon_id:
+ * /api/beacon/{id}:
  *   get:
  *     description: Retrieves details of a beacon, _id passed in params
  */
@@ -32,7 +32,7 @@ Router.get('/:beacon_id', userAuth(), beaconController.FetchBeaconByID);
 
 /**
  * @swagger
- * /api/beacon/:beacon_id:
+ * /api/beacon/{id}:
  *   put:
  *     description: Edits details of a beacon, _id passed in params and updated properties in body
  */
