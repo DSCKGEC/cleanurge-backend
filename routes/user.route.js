@@ -37,6 +37,16 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: string
  *           description: The user's address.
  *           example: 221 B, Baker's Street ...
+ *         createdAt:           
+ *           type: string
+ *           format: date
+ *           description: stores time of creation
+ *           example: 2021-04-17T05:04:35.394Z
+ *         updatedAt:           
+ *           type: string
+ *           format: date
+ *           description: stores time of last update
+ *           example: 2021-04-17T05:04:35.394Z
  */
 
 /* ------------ Endpoint Definitions ----------- */
@@ -132,22 +142,25 @@ Router.post('/login', userController.Login);
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/User'
+ *               type: object
+ *               properties:
+ *                 users:
+ *                   type: array
+ *                   items:
+ *                     $ref: '#/components/schemas/User'
  */
 Router.get('/', userAuth(), userController.FetchAllUsers);
 
 /**
  * @swagger
  * /api/user/{id}:
- *   post:
+ *   get:
  *     description: Retrieves the corresponding user's documents
  *     parameters:
  *       - in: path
  *         name: id
  *         required: true
- *         description: ID of the user to retrieve.
+ *         description: ID of the user to be retrieved.
  *         schema:
  *           type: string
  *     responses:
