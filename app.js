@@ -58,6 +58,11 @@ app.use('/api/beacon', beaconRouter);
 app.use('/api/report', reportRouter);
 app.use('/api/user', userRouter);
 
+// default route
+app.get('/', (req, res) => {
+    res.status(200).send(`Cleanurge server started at ${(new Date(Date.now())).toUTCString()}`);
+});
+
 // start the cleanurge-backend server
 app.listen(port, () =>
     console.log(`Cleanurge server running at http://localhost:${port}`)
