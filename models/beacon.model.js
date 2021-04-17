@@ -27,10 +27,6 @@ const beaconSchema = new Schema(
             type: String,
             default: null,
         },
-        last_contact: {
-            type: Date,
-            required: true,
-        },
     },
     {
         timestamps: true,
