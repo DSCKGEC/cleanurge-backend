@@ -15,7 +15,7 @@ const email_ui = (email, name, link) => {
     </div>
     <div id="p" style="margin: 1.5rem; text-align: center;">
       Now, you're one step closer to help solve the challenges of waste
-      management. Verify your email (${email}) by clicking on the email below to start
+      management. Verify your email (${email}) by clicking on the link below to start
       using the Cleanurge platform.
     </div>
     <a onclick="window.open('${link}', '_blank')" style="padding: 1rem; background-color: #467794; width: 80%; text-align: center; max-width: 350px; margin: 0 auto; color: white;">Activate</a>
