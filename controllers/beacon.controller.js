@@ -5,6 +5,10 @@ const { generateCode } = require('../utils/helper');
 
 const Add = async (req, res) => {
     req.body.code = generateCode(6);
+    req.body.geo = {
+        type: 'Point',
+        coordinates: [...req.body.coordinates]
+    }
     try {
         const result = await beaconService.Add(req.body);
         res.status(201).json(result);
@@ -35,8 +39,8 @@ const FetchBeaconByID = async (req, res) => {
 const Edit = async (req, res) => {
     const { beacon_id } = req.params;
     try {
-        const result = await beaconService.Edit(beacon_id, req.body);
-        res.status(200).json(result);
+        await beaconService.Edit(beacon_id, req.body);
+        res.status(200).json({ message: "OK" });
     } catch (err) {
         res.status(400).json(err);
     }
@@ -45,8 +49,8 @@ const Edit = async (req, res) => {
 const Delete = async (req, res) => {
     const { beacon_id } = req.params;
     try {
-        const result = await beaconService.Delete(beacon_id);
-        res.status(200).json(result);
+        await beaconService.Delete(beacon_id);
+        res.status(200).json({ message: "OK" });
     } catch (err) {
         res.status(400).json(err);
     }

@@ -43,8 +43,8 @@ const FetchReportByUserID = async (req, res) => {
 const Resolve = async (req, res) => {
     const { report_id } = req.params;
     try {
-        const result = await reportService.Resolve(report_id);
-        res.status(200).json(result);
+        await reportService.Resolve(report_id);
+        res.status(200).json({ message: "OK" });
     } catch (err) {
         res.status(400).json(err);
     }
