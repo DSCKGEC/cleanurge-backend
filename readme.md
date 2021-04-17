@@ -120,7 +120,9 @@ A step by step series of instructions that tell you how to get the project runni
 
 ## Live demo
 
-> TODO: deploy over heroku or netlify or some other platform with CI/CD support
+The server is live here:
+
+https://cleanurge.herokuapp.com/
 
 ## Built with
 
