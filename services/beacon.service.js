@@ -12,7 +12,8 @@ const Add = async (beaconBody) => {
 
 const FetchAllBeacons = async () => {
     try {
-        return await Beacon.find();
+        const beacons = await Beacon.find();
+        return { beacons: beacons };
     } catch (error) {
         throw error;
     }
@@ -20,7 +21,8 @@ const FetchAllBeacons = async () => {
 
 const FetchBeaconByID = async (beacon_id) => {
     try {
-        return await Beacon.findOne({ _id: beacon_id });
+        const beacon = await Beacon.findOne({ _id: beacon_id });
+        return { beacon: beacon };
     } catch (error) {
         throw error;
     }
@@ -28,7 +30,13 @@ const FetchBeaconByID = async (beacon_id) => {
 
 const Edit = async (beacon_id, reqBody) => {
     try {
-        return await Beacon.updateOne({ _id: beacon_id }, { reqBody });
+        const beacon = await Beacon.findOne({ _id: beacon_id });
+        if (!beacon) throw { message: "Beacon not found" };
+        if (reqBody.address)  beacon.address = reqBody.address;
+        if (reqBody.coordinates)  beacon.geo.coordinates = reqBody.coordinates;
+        if (reqBody.level)  beacon.level = reqBody.level;
+
+        return await beacon.save();
     } catch (error) {
         throw error;
     }
@@ -36,7 +44,7 @@ const Edit = async (beacon_id, reqBody) => {
 
 const Delete = async (beacon_id) => {
     try {
-        return await Beacon.updateOne({ _id: beacon_id });
+        return await Beacon.deleteOne({ _id: beacon_id });
     } catch (error) {
         throw error;
     }
