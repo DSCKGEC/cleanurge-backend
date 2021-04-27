@@ -4,6 +4,13 @@
 
 A scalable waste management system powered by IoT.
 
+
+## There are 3 repositories for the entire cleanurge system in total
+1. **[cleanurge-mcu](https://github.com/DSCKGEC/cleanurge-mcu):** Containing the source code for the microcontroller
+2. **[cleanurge-backend](https://github.com/DSCKGEC/cleanurge-backend):** Containing the source code for the Express backend
+3. **[cleanurge-app](https://github.com/DSCKGEC/cleanurge-app):**  Containing the source code for the Android App
+
+
 ## Contents
 
 1. [Description](#description)
