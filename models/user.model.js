@@ -32,7 +32,7 @@ const userSchema = new Schema(
         },
         status: {
             type: String,
-            default: 'unverified',
+            default: 'verified',
         },
     },
     {
