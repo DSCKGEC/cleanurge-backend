@@ -4,6 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const swaggerUi = require('swagger-ui-express');
+const FetchIP = require('./utils/fetch_ip');
 
 /* ------------ Configs ----------- */
 
@@ -62,6 +63,8 @@ app.use('/api/user', userRouter);
 app.get('/', (req, res) => {
     res.status(200).send(`Cleanurge server started at ${(new Date(Date.now())).toUTCString()}`);
 });
+
+app.get('/ip', FetchIP);
 
 // start the cleanurge-backend server
 app.listen(port, () =>
