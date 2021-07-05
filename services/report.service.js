@@ -17,7 +17,7 @@ const Create = async (reportBody) => {
 
 const FetchAllReports = async () => {
     try {
-        const reports =  await Report.find({ is_resolved: false }).populate({
+        const reports = await Report.find({ is_resolved: false }).populate({
             path: 'author',
             select: 'name email phone address',
         });

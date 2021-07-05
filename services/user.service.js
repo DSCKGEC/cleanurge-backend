@@ -14,7 +14,7 @@ const jwt_headers = {
 
 const Register = async (userBody) => {
     try {
-        const user =  await User.create(userBody);
+        const user = await User.create(userBody);
         return { user: user };
     } catch (error) {
         throw error;
@@ -45,7 +45,7 @@ const Login = async (email, password) => {
 
 const FetchAllUsers = async () => {
     try {
-        const users =  await User.find();
+        const users = await User.find();
         return { users: users };
     } catch (error) {
         throw error;
