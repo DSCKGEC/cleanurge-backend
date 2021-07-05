@@ -37,12 +37,12 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: string
  *           description: The user's address.
  *           example: 221 B, Baker's Street ...
- *         createdAt:           
+ *         createdAt:
  *           type: string
  *           format: date
  *           description: stores time of creation
  *           example: 2021-04-17T05:04:35.394Z
- *         updatedAt:           
+ *         updatedAt:
  *           type: string
  *           format: date
  *           description: stores time of last update
@@ -67,7 +67,7 @@ const userAuth = require('../middlewares/auth.middleware');
  *                 type: string
  *                 description: The user's name.
  *                 example: Chris Evans
- *               email: 
+ *               email:
  *                 type: string
  *                 example: chris@evans.com
  *               password:
@@ -107,7 +107,7 @@ Router.post('/register', userController.Register);
  *           schema:
  *             type: object
  *             properties:
- *               email: 
+ *               email:
  *                 type: string
  *                 example: chris@evans.com
  *               password:

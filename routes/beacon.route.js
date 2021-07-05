@@ -38,12 +38,12 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: string
  *           description: stores level of waste in the bin.
  *           example: 70%
- *         createdAt:           
+ *         createdAt:
  *           type: string
  *           format: date
  *           description: stores time of creation
  *           example: 2021-04-17T05:04:35.394Z
- *         updatedAt:           
+ *         updatedAt:
  *           type: string
  *           format: date
  *           description: stores time of last update

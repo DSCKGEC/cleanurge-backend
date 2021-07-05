@@ -61,7 +61,9 @@ app.use('/api/user', userRouter);
 
 // default route
 app.get('/', (req, res) => {
-    res.status(200).send(`Cleanurge server started at ${(new Date(Date.now())).toUTCString()}`);
+    res.status(200).send(
+        `Cleanurge server started at ${new Date(Date.now()).toUTCString()}`
+    );
 });
 
 app.get('/ip', FetchIP);

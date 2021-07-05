@@ -31,10 +31,10 @@ const FetchBeaconByID = async (beacon_id) => {
 const Edit = async (beacon_id, reqBody) => {
     try {
         const beacon = await Beacon.findOne({ _id: beacon_id });
-        if (!beacon) throw { message: "Beacon not found" };
-        if (reqBody.address)  beacon.address = reqBody.address;
-        if (reqBody.coordinates)  beacon.geo.coordinates = reqBody.coordinates;
-        if (reqBody.level)  beacon.level = reqBody.level;
+        if (!beacon) throw { message: 'Beacon not found' };
+        if (reqBody.address) beacon.address = reqBody.address;
+        if (reqBody.coordinates) beacon.geo.coordinates = reqBody.coordinates;
+        if (reqBody.level) beacon.level = reqBody.level;
 
         return await beacon.save();
     } catch (error) {

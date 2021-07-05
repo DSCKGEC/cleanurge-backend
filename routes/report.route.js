@@ -37,12 +37,12 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: boolean
  *           description: stores issue status
  *           example: false
- *         createdAt:           
+ *         createdAt:
  *           type: string
  *           format: date
  *           description: stores time of creation
  *           example: 2021-04-17T05:04:35.394Z
- *         updatedAt:           
+ *         updatedAt:
  *           type: string
  *           format: date
  *           description: stores time of last update
@@ -74,12 +74,12 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: string
  *           description: The user's address.
  *           example: 221 B, Baker's Street ...
- *         createdAt:           
+ *         createdAt:
  *           type: string
  *           format: date
  *           description: stores time of creation
  *           example: 2021-04-17T05:04:35.394Z
- *         updatedAt:           
+ *         updatedAt:
  *           type: string
  *           format: date
  *           description: stores time of last update
@@ -109,12 +109,12 @@ const userAuth = require('../middlewares/auth.middleware');
  *           type: boolean
  *           description: stores issue status
  *           example: false
- *         createdAt:           
+ *         createdAt:
  *           type: string
  *           format: date
  *           description: stores time of creation
  *           example: 2021-04-17T05:04:35.394Z
- *         updatedAt:           
+ *         updatedAt:
  *           type: string
  *           format: date
  *           description: stores time of last update
@@ -189,7 +189,7 @@ Router.get('/', userAuth('admin'), reportController.FetchAllReports);
  *       - in: path
  *         name: id
  *         required: true
- *         description: ID of the user 
+ *         description: ID of the user
  *         schema:
  *           type: string
  *     responses:
